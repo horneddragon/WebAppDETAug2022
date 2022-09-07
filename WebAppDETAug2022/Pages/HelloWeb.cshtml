@@ -1,0 +1,28 @@
+﻿@page
+@model WebAppDETAug2022.Pages.HelloWebModel
+@{
+}
+
+
+<h1>Welcome to my page</h1>
+<h2>Happy @DateTime.Today.DayOfWeek!!</h2>
+@{
+    void RenderName(string name)
+    {
+    <p>Name: <strong>@name</strong></p>
+    }
+
+    RenderName("Mahatma Gandhi");
+    RenderName("Martin Luther King, Jr.");
+}
+@{
+    var inCSharp = true;
+    <p>Now in HTML, was in C# @inCSharp</p>
+}
+
+}
+
+page Says @Model.Msg
+
+<p>Discount Valid for today @Model.Discount%</p>
+<h5>Offer valid till @DateTime.Today.AddDays(3)</h5>
