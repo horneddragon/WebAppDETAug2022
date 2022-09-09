@@ -1,7 +1,16 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using MVCDemo.Data;
+using Microsoft.Data.Sqlite;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<MVCDemoContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MVCDemoContext") ?? throw new InvalidOperationException("Connection string 'MVCDemoContext' not found.")));
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+//builder.Services.AddSqlite<PizzaContext>("Data Source=MVCDemo.db");
 
 var app = builder.Build();
 
@@ -22,6 +31,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Friend}/{action=List}/{id?}");
 
 app.Run();

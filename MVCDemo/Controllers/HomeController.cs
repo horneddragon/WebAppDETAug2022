@@ -13,6 +13,14 @@ namespace MVCDemo.Controllers
             _logger = logger;
         }
 
+        public IActionResult Hello(string name,string loc, string contact)
+        {
+            ViewBag.UserName = name;
+            ViewBag.Location = loc;
+            ViewBag.contact = contact;
+            return View();
+        }
+
         public IActionResult Index()
         {
             return View();

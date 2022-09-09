@@ -1,0 +1,10 @@
+﻿@model IEnumerable<MVCDemo.Models.Pizza>
+
+@{
+    ViewData["Title"] = "List";
+}
+<h1>Great Offer @TempData["FestiveOffers"]%;</h1>
+<h1>List</h1>
+
+
+<partial name ="_PizzaList"/>
