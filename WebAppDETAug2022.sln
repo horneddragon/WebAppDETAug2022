@@ -5,7 +5,11 @@ VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppDETAug2022", "WebAppDETAug2022\WebAppDETAug2022.csproj", "{20C9A65D-D991-43FB-8A3C-AED169E26CB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCDemo", "MVCDemo\MVCDemo.csproj", "{7C54ADBC-BFDB-435F-A96D-A86DB62C0E56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCDemo", "MVCDemo\MVCDemo.csproj", "{7C54ADBC-BFDB-435F-A96D-A86DB62C0E56}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookMyShow", "..\BookMyShow\BookMyShow\BookMyShow.csproj", "{654E1932-AE14-4F00-9727-452F5F3CFE2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIDemo", "APIDemo\APIDemo.csproj", "{A07EECCC-4CBD-458F-A32F-C206211B1C2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{7C54ADBC-BFDB-435F-A96D-A86DB62C0E56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C54ADBC-BFDB-435F-A96D-A86DB62C0E56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C54ADBC-BFDB-435F-A96D-A86DB62C0E56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{654E1932-AE14-4F00-9727-452F5F3CFE2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{654E1932-AE14-4F00-9727-452F5F3CFE2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{654E1932-AE14-4F00-9727-452F5F3CFE2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{654E1932-AE14-4F00-9727-452F5F3CFE2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A07EECCC-4CBD-458F-A32F-C206211B1C2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A07EECCC-4CBD-458F-A32F-C206211B1C2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A07EECCC-4CBD-458F-A32F-C206211B1C2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A07EECCC-4CBD-458F-A32F-C206211B1C2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
